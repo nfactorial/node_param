@@ -91,12 +91,12 @@ API.create = function(typeName, desc) {
         throw new Error('node_param.create - No type name was specified for creation.');
     }
 
-    const cb = typeMap.get(typeName);
-    if (!cb) {
+    const param = typeMap.get(typeName);
+    if (!param) {
         throw new Error('node_param.create - Unknown parameter type \'' + typeName + '\' requested for creation.');
     }
 
-    return cb(desc);
+    return new param.cb(desc);
 };
 
 /**
