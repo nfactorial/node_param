@@ -1,0 +1,22 @@
+{
+  "name": "@nfactorial/node_param",
+  "version": "0.0.1",
+  "description": "Node.js module for creating and accessing game parameters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfactorial/node_param.git"
+  },
+  "author": "nfactorial",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nfactorial/node_param/issues"
+  },
+  "homepage": "https://github.com/nfactorial/node_param#readme",
+  "devDependencies": {
+    "chai": "^4.1.0"
+  }
+}
