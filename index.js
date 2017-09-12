@@ -84,9 +84,10 @@ API.unregister = function(typeName) {
  *
  * @param {String} typeName - The type of parameter that is to be created.
  * @param {Object} desc - Description of the parameter instance to be created.
+ * @param {Object=} defaultValue - The default value for the parameter (if supported by the parameter type).
  * @returns {Object} Parameter object that was created using the supplied description.
  */
-API.create = function(typeName, desc) {
+API.create = function(typeName, desc, defaultValue) {
     if (!typeName) {
         throw new Error('node_param.create - No type name was specified for creation.');
     }
@@ -96,7 +97,7 @@ API.create = function(typeName, desc) {
         throw new Error('node_param.create - Unknown parameter type \'' + typeName + '\' requested for creation.');
     }
 
-    return new param.cb(desc);
+    return new param.cb(desc, defaultValue);
 };
 
 /**

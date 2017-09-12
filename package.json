@@ -1,6 +1,6 @@
 {
   "name": "@nfactorial/node_param",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node.js module for creating and accessing game parameters.",
   "main": "index.js",
   "scripts": {
